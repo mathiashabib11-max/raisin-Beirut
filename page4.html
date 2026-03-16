@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raisin' Beirut - Reviews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f0;
+        }
+        .header {
+            background-color: #ff4500;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #cc0000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px #cc0000;
+        }
+        .nav {
+            background-color: #ff6600;
+            text-align: center;
+            padding: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #ffffcc;
+            text-decoration: underline;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .reviews-title {
+            text-align: center;
+            color: #cc0000;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .reviews-intro {
+            text-align: center;
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .review-box {
+            background-color: white;
+            border: 3px solid #ff4500;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        .review-box h3 {
+            color: #ff4500;
+            font-size: 22px;
+            margin-top: 0;
+        }
+        .review-text {
+            color: #555;
+            font-style: italic;
+            line-height: 1.6;
+        }
+        .reviewer-name {
+            color: #cc0000;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+        }
+        .form-box {
+            background-color: white;
+            border: 3px solid #cc0000;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .form-box h3 {
+            color: #cc0000;
+            font-size: 24px;
+            margin-top: 0;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #ff4500;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ff6600;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .submit-btn {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+        .submit-btn:hover {
+            background-color: #cc0000;
+        }
+        .footer {
+            background-color: #cc0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Raisin' Beirut</h1>
+    </div>
+    
+    <div class="nav">
+        <a href="page1.html">Home</a>
+        <a href="page2.html">Menu</a>
+        <a href="page3.html">Our Staff</a>
+        <a href="page4.html">Reviews</a>
+    </div>
+    
+    <div class="content">
+        <h2 class="reviews-title">Reviews & Feedback</h2>
+        <p class="reviews-intro">See what people are saying about us, and share your own experience!</p>
+        
+        <div class="review-box">
+            <h3>"Best chicken in town!"</h3>
+            <p class="review-text">
+                "I tried the chicken strips and they were absolutely amazing! Crispy on the outside, juicy on the inside. 
+                The secret sauce is fire too. Will definitely be coming back!"
+            </p>
+            <p class="reviewer-name">- Sarah M.</p>
+        </div>
+        
+        <div class="review-box">
+            <h3>"Authentic Lebanese flavors"</h3>
+            <p class="review-text">
+                "The tawouk sandwich reminded me of my grandma's cooking. You can tell they put love into their food. 
+                The staff is super friendly too, especially Herbert!"
+            </p>
+            <p class="reviewer-name">- Mike K.</p>
+        </div>
+        
+        <div class="review-box">
+            <h3>"Gen Z approved"</h3>
+            <p class="review-text">
+                "Finally a place that gets it! Great food, good vibes, and the burger is bussin'. No cap, this is 
+                my new favorite spot."
+            </p>
+            <p class="reviewer-name">- Alex T.</p>
+        </div>
+        
+        <div class="form-box">
+            <h3>Leave Your Review</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select a rating</option>
+                        <option value="5">5 stars - Amazing!</option>
+                        <option value="4">4 stars - Great!</option>
+                        <option value="3">3 stars - Good</option>
+                        <option value="2">2 stars - Okay</option>
+                        <option value="1">1 star - Could be better</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="favorite">Favorite Item:</label>
+                    <select id="favorite" name="favorite">
+                        <option value="">Select your favorite</option>
+                        <option value="strips">Chicken Strips</option>
+                        <option value="burger">Crispy Chicken Burger</option>
+                        <option value="hotdog">Loaded Hot Dog</option>
+                        <option value="tawouk">Tawouk Sandwich</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review">Your Review:</label>
+                    <textarea id="review" name="review" placeholder="Tell us about your experience..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Raisin' Beirut - Crispy Chicken for the Culture</p>
+        <p>Made with love in Lebanon</p>
+    </div>
+</body>
+</html>
